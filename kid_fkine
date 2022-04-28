@@ -1,0 +1,36 @@
+% 正运动计算
+function TFkine = kid_fkine(theta1,theta2,theta3,theta4)
+
+d1 = 86; a2 = 135; a3 = 89; 
+
+% c1 = cos(theta1);    s1 = sin(theta1);
+% c2 = cos(theta2);    s2 = sin(theta2);
+% c3 = cos(theta3);    s3 = sin(theta3);
+% c4 = cos(theta4);    s4 = sin(theta4);
+% 
+% T01 = [c1   -s1     0    0;s1    c1     0    0;0     0      1    d1;0     0      0    1];
+% T12 = [c2   -s2     0    0;0     0      -1    0;s2    c2     0    0;0     0      0    1];
+% T23 = [c3   -s3     0    a2;s3    c3     0    0;0     0      1    0;0     0      0    1];
+% T34 = [c4   -s4     0    a3;s4    c4     0    0;0     0      1    0;0     0      0    1];
+% t_fkine = T01 *T12 *T23 *T34;
+
+%优化方案：（避免了一些重复运算）
+r11 = cos(theta2 + theta3 + theta4)*cos(theta1);
+r12 = -sin(theta2 + theta3 + theta4)*cos(theta1);
+r13 =  sin(theta1);
+r21 = cos(theta2 + theta3 + theta4)*sin(theta1);
+r22 = -sin(theta2 + theta3 + theta4)*sin(theta1);
+r23 = -cos(theta1);
+r31 = sin(theta2 + theta3 + theta4);
+r32 = cos(theta2 + theta3 + theta4);
+r33 = 0;
+px = cos(theta1)*(a3*cos(theta2 + theta3) + a2*cos(theta2));
+py = sin(theta1)*(a3*cos(theta2 + theta3) + a2*cos(theta2));
+pz = d1 + a3*sin(theta2 + theta3) + a2*sin(theta2);
+
+TFkine = [r11 r12 r13 px;
+          r21 r22 r23 py;
+          r31 r32 r33 pz;
+           0   0   0   1];
+
+end
