@@ -3,6 +3,7 @@
 a 4-dof robotic arm, I call him 'kiddy', is this name funny?
 
   
+===============================================================
   
 以下是matlab代码目录：
 the MULU of my matlab code:
@@ -16,6 +17,8 @@ the MULU of my matlab code:
 6.一些注意事项  some notice       
   
      
+===============================================================    
+         
 修改日志：    
 懒得翻译了，要看自己查去
   
