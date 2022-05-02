@@ -13,7 +13,7 @@
 
 修改日志：
 
-2022/5/2
+2022/5/2    
       将rotation matrix的subelements表示法 改成 n o a表示法 。
  末端执行器沿着操作端的z-axis接近被操作物体，此时这个轴被称为接近轴a-axis （approach）；末端执行器接近物体的方向称为方向轴，简称o-axis（orientation）；垂直于a和o的为垂直轴n-axis。
  
