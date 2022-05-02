@@ -3,14 +3,14 @@
 
 以下是matlab代码目录：
 
-1.建立在RTS中的D-H模型     
-2.正运动学解     
-3.逆运动学解     
-4.轨迹规划     
-5.动力学解     
-6.一些注意事项    
-
-   
+1.建立在RTS中的D-H模型(modified)       
+2.正运动学解   forward kinematics         
+3.逆运动学解   inverse kinematics      
+4.轨迹规划  trajectory planning       
+5.动力学解  dynamics      
+6.一些注意事项  some notice       
+  
+     
 修改日志：
 
 2022/5/2    
