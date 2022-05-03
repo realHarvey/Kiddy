@@ -1,6 +1,7 @@
 % 正运动计算
-function TFkine = kiddy_fkine(theta1,theta2,theta3,theta4)
+function TFkine = kiddy_fkine(theta)
 
+theta1 = theta(1); theta2 = theta(2); theta3 = theta(3); theta4 = theta(4);
 d1 = 86; a2 = 135; a3 = 89; 
 
 % c1 = cos(theta1);    s1 = sin(theta1);
