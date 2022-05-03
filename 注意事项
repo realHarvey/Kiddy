@@ -1,0 +1,32 @@
+1:    
+    当出现"vertcat串联的数组的维度不一致"的时候，检查是否定义变量并赋值    
+
+2：    
+    当出现        
+"错误使用 sym/subsindex (第 953 行)       
+Invalid indexing or function definition. Indexing must follow MATLAB      
+indexing. Function arguments must be symbolic variables, and    
+function body must be sym expression."    
+         的时候，检查括号附近是否漏掉了" * "    
+
+3:     
+    当求解错误的时候首先逐错排查运算过程的符号问题
+
+4:    
+    atan2的范围在(-pi,pi)    
+
+    theta1 = atan2(y,x)     //点（x,y）在第一象限，theta1恒大于0
+           = -atan(-y,x)
+    theta1 > 0
+    theta2 = atan2(-y,-x)   //点（-x,-y）在第三象限，theta1总小于0
+           = -atan(y,-x)
+    theta2 < 0    
+
+一般来说，解出theta1和theta2分布在数轴上下方（参考atan2的图像）
+ 
+5:    
+    求解发生特定区域值不对的情况，检查是否定义重叠
+
+6:    
+    函数参数使用报错，类似atan2输入为非实数，有可能是位置超出了workspace    
+所以在进行trajectory planning之前先用蒙特卡洛法大致测一下
