@@ -18,17 +18,17 @@ L(3).qlim = [0*angle,270*angle]; L(3).offset = -135*angle;
 L(4) = Link([ 0       0      a3     0 ],  'modified');
 L(4).qlim = [-135*angle,45*angle]; L(4).offset = 45*angle;
 
-kid = SerialLink(L,'name','Kid'); %连接各连杆
-kid.display() % 显示机械臂的D-H参数
-kid.dyn % 动力学参数
+kiddy = SerialLink(L,'name','Kid'); %连接各连杆
+kiddy.display() % 显示机械臂的D-H参数
+kiddy.dyn % 动力学参数
 
 % 验证正逆运动学function的正确性
-T = kid_fkine(pi/6,pi/4,pi/6,pi/6)
-rads = kid_ikine(T)
+T = kiddy_fkine(pi/6,pi/4,pi/6,pi/6)
+rads = kiddy_ikine(T)
 rad2deg(rads);
-T1 = kid_fkine( 0.5236 ,  0.7854  ,  0.5236  ,   0.5236)
-T2 = kid_fkine( 0.5236 ,  1.1991  , -0.5236  ,   1.1571)
-T3 = kid_fkine(-2.6180 ,  1.9425  ,  0.5236  ,  -0.6335)
-T4 = kid_fkine(-2.6180 ,  2.3562  , -0.5236  ,  -0.0000)
+T1 = kiddy_fkine( 0.5236 ,  0.7854  ,  0.5236  ,   0.5236)
+T2 = kiddy_fkine( 0.5236 ,  1.1991  , -0.5236  ,   1.1571)
+T3 = kiddy_fkine(-2.6180 ,  1.9425  ,  0.5236  ,  -0.6335)
+T4 = kiddy_fkine(-2.6180 ,  2.3562  , -0.5236  ,  -0.0000)
 
       
