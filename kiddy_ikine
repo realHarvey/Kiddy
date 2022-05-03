@@ -1,5 +1,5 @@
 % 逆运动解算
-function ikm = kid_ikine(T)
+function ikm = kiddy_ikine(T)
 
 syms theta1 theta2 theta3 theta4
 d1 = 86; a2 = 135; a3 = 89;
