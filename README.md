@@ -28,7 +28,9 @@ the MULU of my matlab code:
 --2022/5/2    
       将rotation matrix的subelements表示法 改成 n o a表示法 。
  末端执行器沿着操作端的z-axis接近被操作物体，此时这个轴被称为接近轴a-axis （approach）；末端执行器接近物体的方向称为方向轴，简称o-axis（orientation）；垂直于a和o的为垂直轴n-axis。
- 
+       
+--2022/5/3
+      在使用中我遇到一个问题：我们使用或得到的rad往往并不是四个单独的rad，而是一个rad组。为了方便后续使用，把正运动函数中输入的变量 由四个单独的rads 改为 一个合并的rad，该 rad = [rad1,rad2,rad3,rad4]
  
  
  
