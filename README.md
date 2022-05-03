@@ -14,7 +14,7 @@ the MULU of my matlab code:
 3.逆运动学解   inverse kinematics      
 4.轨迹规划  trajectory planning       
 5.动力学解  dynamics      
-6.一些注意事项  some notice       
+6.一些注意事项  tips       
   
      
 ===============================================================    
