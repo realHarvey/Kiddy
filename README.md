@@ -33,6 +33,9 @@ the MULU of my matlab code:
       在使用中我遇到一个问题：我们使用或得到的rad往往并不是四个单独的rad，而是一个rad组。为了方便后续使用，把正运动函数中输入的变量 由四个单独的rads 改为 一个合并的rad，该 rad = [rad1,rad2,rad3,rad4]
  
  
+ ![9bfe9a632bf90ed760e07b8dc363746](https://user-images.githubusercontent.com/78713753/170030597-646a4112-f2fb-4f0b-917b-0285a57ebf71.jpg)
+
+ 
  
  
  
