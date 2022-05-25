@@ -42,5 +42,6 @@ the MULU of my matlab code:
            
  <img width="997" alt="无标题" src="https://user-images.githubusercontent.com/78713753/170242655-f039e6d6-533d-49e1-9a92-79daf0ce4821.png">
 
- 
+ --2022/5/25    
+      添加Kiddy的三维模型（IGS格式，常规的CAD都可以打开，但是不能删除，Fusion是特例）
  
