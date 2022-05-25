@@ -36,9 +36,7 @@ the MULU of my matlab code:
 --2022/5/24          
       创建"ROS基本框架"，添加我整理出来有关ROS的一些知识结构图
            
- ![9bfe9a632bf90ed760e07b8dc363746](https://user-images.githubusercontent.com/78713753/170030597-646a4112-f2fb-4f0b-917b-0285a57ebf71.jpg)
+ <img width="997" alt="无标题" src="https://user-images.githubusercontent.com/78713753/170242655-f039e6d6-533d-49e1-9a92-79daf0ce4821.png">
 
- 
- 
  
  
